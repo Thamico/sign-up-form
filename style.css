@@ -1,0 +1,135 @@
+:root {
+  --tones: #154268;
+  --input-border: #e5e7eb;
+  --focus: #1d4ed8;
+  --error: #b91c1c;
+  --btn-hover: #103453;
+  --btn-active: #0a2134;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.logo {
+  flex-direction: row;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  min-height: 9.375rem;
+}
+
+.logo img {
+  width: 8%;
+  margin-right: 5px;
+}
+
+.sidebar {
+  background-image: url(images/trees.jpg);
+  background-size: cover;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 37.153vw;
+  padding-top: 13.75rem;
+}
+
+.logo h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+  font-family: "Lora", serif;
+  padding-left: 30px;
+}
+
+.dummy-text {
+  min-height: 23.125rem;
+  max-height: 23.125rem;
+  padding-top: 10.5rem;
+  padding-bottom: 3.75rem;
+  margin-left: 3.125rem;
+  text-align: left;
+}
+
+.dummy-text > p {
+  max-width: 42rem;
+  font-size: 1.5rem;
+}
+
+.input-form {
+  min-height: 18.75rem;
+  background-color: white;
+  padding-left: 3.125rem;
+  box-shadow: 0 5px 10px -5px gray;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.input-form h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.25rem;
+  margin: 0;
+}
+
+.input {
+  flex-wrap: wrap;
+  column-gap: 4.375rem;
+  row-gap: 1.5625rem;
+  outline: none;
+}
+
+.input > div {
+  flex-direction: column;
+}
+
+.inputs {
+  border: 1px solid var(--input-border);
+  padding: 0.625rem;
+  border-radius: 5px;
+  transition: ease-in-out 0.1s;
+  height: 2rem;
+  width: 16.375rem;
+}
+
+.btn {
+  height: 3.125rem;
+  width: 14.6875rem;
+  font-size: 1.125rem;
+  color: white;
+  background-color: var(--tones);
+  border-radius: 0.5rem;
+  margin-top: 2.1875rem;
+  margin-bottom: 2.1875rem;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+dummy-text,
+form > button,
+.right-sidebar > p {
+  margin-left: 3.125rem;
+}
+
+button {
+  border: none;
+}
+
+.right-sidebar {
+  background-color: #eee;
+}
